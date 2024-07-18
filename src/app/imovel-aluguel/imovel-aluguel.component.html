@@ -1,0 +1,16 @@
+<img src="voltar.png" alt="Voltar" class="voltar" (click)="voltarDetalhes()">
+<section class="content">
+    <article>
+        <img class="listing-photo" alt="Foto" src="{{imovel?.url_foto}}">
+        <section class="listing-description">
+            <h2 class="listing-heading">{{imovel?.nome}}</h2>
+            <p class="listing-location">{{imovel?.cidade}},{{imovel?.estado}}</p>
+        </section>
+    </article>
+    <section class="listining-features">
+        <h2 class="section-heading">Informações alugamento</h2>
+        <ul>@for (info of imovel?.aluguel; track $index) {
+            <li>{{info.chave}}: {{info.valor}}</li>}
+        </ul>
+    </section>
+</section>
