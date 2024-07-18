@@ -4,7 +4,9 @@
     margin: 0;
     padding: 0;
 }
-
+.alinha{
+    margin-left: 10px;
+    }
 body {
     font-family: 'Be Vietnam Pro', sans-serif;
 }
